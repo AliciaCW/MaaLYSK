@@ -310,6 +310,12 @@
 			"entry": "自动过剧情",
 			"default_check": false,
 			"description": "进入剧情后在剧情页面启动，无法过有选项的剧情"
+		},
+		{
+			"name": "🏃陪伴/运动陪伴",
+			"entry": "开始五男主运动陪伴",
+			"default_check": false,
+			"description": "依次陪伴五位男主进行 5 分钟运动，自动切换角色。"
 		}
 	],
 	"option": {

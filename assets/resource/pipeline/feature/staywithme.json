@@ -25,12 +25,14 @@
 					"陪我",
 					"一起"
 				],
-				"roi": [0, 0, 0, 0]
+				"roi": [538,1135,108,113]
 			}
 		},
 		"action": {
-			"type": "DoNothing",
-			"param": {}
+			"type": "Click",
+			"param": {
+				"roi": [538,1135,108,113]
+			}
 		},
 		"focus": {
 			"Node.Recognition.Succeeded": "当前已在「陪我一起」页面"
@@ -43,15 +45,16 @@
 			"type": "OCR",
 			"param": {
 				"expected": [
-					"陪伴",
-					"陪"
+					"开始"
 				],
-				"roi": [0, 0, 0, 0]
+				"roi": [558,1108,135,119]
 			}
 		},
 		"action": {
 			"type": "Click",
-			"param": {}
+			"param": {
+				"roi": [70,310,58,55]
+			}
 		},
 		"focus": {
 			"Node.Action.Succeeded": "从主页进入陪伴界面"
@@ -80,6 +83,18 @@
 			"Node.Action.Succeeded": "进入「陪我一起」界面"
 		},
 		"post_delay": 2000,
+		"timeout": 8000,
+		"next": ["跳过运动前对话"]
+	},
+	"跳过运动前对话": {
+		"action": {
+			"type": "Click",
+			"param": {}
+		},
+		"focus": {
+			"Node.Action.Succeeded": "跳过运动前的对话"
+		},
+		"post_delay": 1500,
 		"timeout": 8000,
 		"next": ["选择运动模式"]
 	},
