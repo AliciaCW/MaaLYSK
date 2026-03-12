@@ -4,12 +4,12 @@
             "filePath": "D:\\Files\\Projects\\GitHub\\MaaLYSK\\assets\\resource\\pipeline\\feature\\staywithme.json",
             "filename": "新建Pipeline2",
             "isModifiedExternally": false,
-            "lastSyncTime": 1773076095525,
+            "lastSyncTime": 1773338507162,
             "prefix": "",
             "savedViewport": {
-                "x": 829,
-                "y": 81,
-                "zoom": 0.28
+                "x": 553,
+                "y": 90,
+                "zoom": 0.35
             },
             "version": "v1.2.3"
         }
@@ -17,55 +17,71 @@
     "$__mpe_external_stop_新建Pipeline2": {
         "$__mpe_code": {
             "position": {
-                "x": 1339,
-                "y": -417
+                "x": -1172,
+                "y": 1528
+            }
+        }
+    },
+    "$__mpe_external_导航回主页面_新建Pipeline2": {
+        "$__mpe_code": {
+            "position": {
+                "x": -3040,
+                "y": 428
+            }
+        }
+    },
+    "$__mpe_external_返回上一级页面_新建Pipeline2": {
+        "$__mpe_code": {
+            "position": {
+                "x": -2469,
+                "y": 488
             }
         }
     },
     "$__mpe_external_退出各类弹窗_新建Pipeline2": {
         "$__mpe_code": {
             "position": {
-                "x": 4075,
-                "y": 643
+                "x": 2807,
+                "y": 400
             }
         }
     },
     "$__mpe_external_退出牵绊度提升popop_新建Pipeline2": {
         "$__mpe_code": {
             "position": {
-                "x": 4048,
-                "y": 742
+                "x": 3446,
+                "y": 296
             }
         }
     },
     "$__mpe_external_退出获得奖励popop_新建Pipeline2": {
         "$__mpe_code": {
             "position": {
-                "x": 3981,
-                "y": 532
+                "x": 2938,
+                "y": 361
             }
         }
     },
     "从主页进入陪伴页面": {
         "$__mpe_code": {
             "position": {
-                "x": -389,
-                "y": 852
+                "x": -1614,
+                "y": 847
             }
         },
         "action": {
             "param": {
                 "target": [
-                    63,
-                    312,
-                    62,
-                    50
+                    76,
+                    329,
+                    36,
+                    20
                 ]
             },
             "type": "Click"
         },
         "focus": {
-            "Node.Action.Succeeded": "从主页进入陪伴界面"
+            "Node.Action.Succeeded": "从主页进入陪伴页面"
         },
         "next": [
             "陪伴_进入人物选择"
@@ -85,11 +101,171 @@
         },
         "timeout": 8000
     },
+    "取消夏以昼已选": {
+        "$__mpe_code": {
+            "position": {
+                "x": -33,
+                "y": -301
+            }
+        },
+        "action": {
+            "param": {
+                "target": true
+            },
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Action.Succeeded": "取消选择夏以昼"
+        },
+        "post_delay": 400,
+        "recognition": {
+            "param": {
+                "roi": [
+                    158,
+                    1000,
+                    63,
+                    66
+                ],
+                "template": [
+                    "staywithme/夏以昼被选中.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "取消沈星回已选": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1386,
+                "y": -426
+            }
+        },
+        "action": {
+            "param": {
+                "target": true
+            },
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Action.Succeeded": "取消选择沈星回"
+        },
+        "post_delay": 400,
+        "recognition": {
+            "param": {
+                "roi": [
+                    146,
+                    212,
+                    95,
+                    89
+                ],
+                "template": [
+                    "staywithme/沈星回被选中.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "取消祁煜已选": {
+        "$__mpe_code": {
+            "position": {
+                "x": -697,
+                "y": -365
+            }
+        },
+        "action": {
+            "param": {
+                "target": true
+            },
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Action.Succeeded": "取消选择祁煜"
+        },
+        "post_delay": 400,
+        "recognition": {
+            "param": {
+                "roi": [
+                    164,
+                    628,
+                    62,
+                    62
+                ],
+                "template": [
+                    "staywithme/祁煜被选中.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "取消秦彻已选": {
+        "$__mpe_code": {
+            "position": {
+                "x": -361,
+                "y": -402
+            }
+        },
+        "action": {
+            "param": {
+                "target": true
+            },
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Action.Succeeded": "取消选择秦彻"
+        },
+        "post_delay": 400,
+        "recognition": {
+            "param": {
+                "roi": [
+                    391,
+                    808,
+                    49,
+                    46
+                ],
+                "template": [
+                    "staywithme/秦彻被选中.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "取消黎深已选": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1013,
+                "y": -400
+            }
+        },
+        "action": {
+            "param": {
+                "target": true
+            },
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Action.Succeeded": "取消选择黎深"
+        },
+        "post_delay": 400,
+        "recognition": {
+            "param": {
+                "roi": [
+                    363,
+                    415,
+                    81,
+                    76
+                ],
+                "template": [
+                    "staywithme/黎深被选中.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
     "检查是否在主页面": {
         "$__mpe_code": {
             "position": {
-                "x": -863,
-                "y": 869
+                "x": -2070,
+                "y": 1062
             }
         },
         "focus": {
@@ -102,6 +278,7 @@
         "on_error": [
             "stop"
         ],
+        "post_delay": 400,
         "recognition": {
             "param": {
                 "roi": [
@@ -120,8 +297,8 @@
     "检查是否在陪伴页面": {
         "$__mpe_code": {
             "position": {
-                "x": -840,
-                "y": 436
+                "x": -2034,
+                "y": 557
             }
         },
         "focus": {
@@ -131,6 +308,7 @@
         "next": [
             "陪伴_进入人物选择"
         ],
+        "post_delay": 400,
         "recognition": {
             "param": {
                 "expected": [
@@ -148,11 +326,93 @@
             "type": "OCR"
         }
     },
+    "确定时长": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2821,
+                "y": 677
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    449,
+                    678,
+                    81,
+                    25
+                ]
+            },
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "进入一起运动模式"
+        },
+        "next": [
+            "跳过运动开始时对话"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "确定",
+                    "确",
+                    "定"
+                ],
+                "roi": [
+                    449,
+                    678,
+                    81,
+                    25
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "确定角色": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1233,
+                "y": 690
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    431,
+                    1134,
+                    152,
+                    42
+                ]
+            },
+            "type": "Click"
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "进入一起运动模式"
+        },
+        "next": [
+            "陪伴_进入陪我一起"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "确定",
+                    "确",
+                    "定"
+                ],
+                "roi": [
+                    431,
+                    1134,
+                    152,
+                    42
+                ]
+            },
+            "type": "OCR"
+        }
+    },
     "等待运动结束": {
         "$__mpe_code": {
             "position": {
-                "x": 3104,
-                "y": 659
+                "x": 3396,
+                "y": 655
             }
         },
         "action": {
@@ -160,15 +420,12 @@
             "type": "Click"
         },
         "focus": {
-            "Node.Action.Succeeded": "与沈星回的 5 分钟运动结束，返回角色选择界面"
+            "Node.Action.Succeeded": "与沈星回的 5 分钟运动结束，返回角色选择页面"
         },
         "next": [
             "[JumpBack]退出获得奖励popop",
             "[JumpBack]退出各类弹窗",
             "[JumpBack]退出牵绊度提升popop"
-        ],
-        "on_error": [
-            "[JumpBack]stop"
         ],
         "post_delay": 2000,
         "recognition": {
@@ -194,8 +451,8 @@
     "跳过对话": {
         "$__mpe_code": {
             "position": {
-                "x": 1693,
-                "y": 635
+                "x": 1763,
+                "y": 660
             }
         },
         "action": {
@@ -208,7 +465,7 @@
         "next": [
             "选择运动模式"
         ],
-        "post_delay": 1500,
+        "post_delay": 400,
         "recognition": {
             "param": {
                 "roi": [
@@ -226,8 +483,8 @@
     "跳过运动前对话": {
         "$__mpe_code": {
             "position": {
-                "x": 2231,
-                "y": 599
+                "x": 2245,
+                "y": 648
             }
         },
         "action": {
@@ -240,7 +497,7 @@
         "next": [
             "选择5分钟时长"
         ],
-        "post_delay": 1500,
+        "post_delay": 400,
         "recognition": {
             "param": {
                 "roi": [
@@ -258,8 +515,8 @@
     "跳过运动开始时对话": {
         "$__mpe_code": {
             "position": {
-                "x": 2770,
-                "y": 589
+                "x": 3096,
+                "y": 658
             }
         },
         "action": {
@@ -272,15 +529,15 @@
         "next": [
             "等待运动结束"
         ],
-        "post_delay": 1500,
+        "post_delay": 400,
         "repeat": 5,
         "timeout": 8000
     },
     "进入陪伴": {
         "$__mpe_code": {
             "position": {
-                "x": -1363,
-                "y": 663
+                "x": -2798,
+                "y": 1045
             }
         },
         "focus": {
@@ -288,15 +545,17 @@
         },
         "next": [
             "检查是否在陪伴页面",
-            "检查是否在主页面"
+            "检查是否在主页面",
+            "[JumpBack]返回上一级页面",
+            "[JumpBack]导航回主页面"
         ],
         "post_delay": 400
     },
     "选择5分钟时长": {
         "$__mpe_code": {
             "position": {
-                "x": 2498,
-                "y": 603
+                "x": 2496,
+                "y": 647
             }
         },
         "action": {
@@ -307,9 +566,9 @@
             "Node.Action.Succeeded": "选择运动时长：5 分钟"
         },
         "next": [
-            "跳过运动开始时对话"
+            "确定时长"
         ],
-        "post_delay": 1500,
+        "post_delay": 400,
         "recognition": {
             "param": {
                 "expected": [
@@ -329,8 +588,8 @@
     "选择夏以昼": {
         "$__mpe_code": {
             "position": {
-                "x": 924,
-                "y": 1526
+                "x": 496,
+                "y": 1544
             }
         },
         "action": {
@@ -340,8 +599,9 @@
         "focus": {
             "Node.Action.Succeeded": "选择夏以昼进行 5 分钟运动陪伴"
         },
+        "max_hit": 1,
         "next": [
-            "陪伴_进入陪我一起"
+            "确定角色"
         ],
         "post_delay": 1500,
         "recognition": {
@@ -363,8 +623,8 @@
     "选择沈星回": {
         "$__mpe_code": {
             "position": {
-                "x": 869,
-                "y": -2
+                "x": 577,
+                "y": 155
             }
         },
         "action": {
@@ -374,8 +634,9 @@
         "focus": {
             "Node.Action.Succeeded": "选择沈星回进行 5 分钟运动陪伴"
         },
+        "max_hit": 1,
         "next": [
-            "陪伴_进入陪我一起"
+            "确定角色"
         ],
         "post_delay": 1500,
         "recognition": {
@@ -397,8 +658,8 @@
     "选择祁煜": {
         "$__mpe_code": {
             "position": {
-                "x": 880,
-                "y": 784
+                "x": 472,
+                "y": 754
             }
         },
         "action": {
@@ -408,8 +669,9 @@
         "focus": {
             "Node.Action.Succeeded": "选择祁煜进行 5 分钟运动陪伴"
         },
+        "max_hit": 1,
         "next": [
-            "陪伴_进入陪我一起"
+            "确定角色"
         ],
         "post_delay": 1500,
         "recognition": {
@@ -431,8 +693,8 @@
     "选择秦彻": {
         "$__mpe_code": {
             "position": {
-                "x": 890,
-                "y": 1153
+                "x": 527,
+                "y": 1116
             }
         },
         "action": {
@@ -442,8 +704,9 @@
         "focus": {
             "Node.Action.Succeeded": "选择秦彻进行 5 分钟运动陪伴"
         },
+        "max_hit": 1,
         "next": [
-            "陪伴_进入陪我一起"
+            "确定角色"
         ],
         "post_delay": 1500,
         "recognition": {
@@ -465,8 +728,8 @@
     "选择运动模式": {
         "$__mpe_code": {
             "position": {
-                "x": 1964,
-                "y": 598
+                "x": 2007,
+                "y": 656
             }
         },
         "action": {
@@ -500,8 +763,8 @@
     "选择黎深": {
         "$__mpe_code": {
             "position": {
-                "x": 854,
-                "y": 383
+                "x": 555,
+                "y": 460
             }
         },
         "action": {
@@ -511,8 +774,9 @@
         "focus": {
             "Node.Action.Succeeded": "选择黎深进行 5 分钟运动陪伴"
         },
+        "max_hit": 1,
         "next": [
-            "陪伴_进入陪我一起"
+            "确定角色"
         ],
         "post_delay": 1500,
         "recognition": {
@@ -531,11 +795,83 @@
         },
         "timeout": 8000
     },
+    "陪伴_夏以昼": {
+        "$__mpe_code": {
+            "position": {
+                "x": -532,
+                "y": 1555
+            }
+        },
+        "next": [
+            "选择夏以昼"
+        ],
+        "rate_limit": 500,
+        "timeout": 8000
+    },
+    "陪伴_沈星回": {
+        "$__mpe_code": {
+            "position": {
+                "x": -497,
+                "y": 395
+            }
+        },
+        "next": [
+            "选择沈星回"
+        ],
+        "rate_limit": 500,
+        "timeout": 8000
+    },
+    "陪伴_清空选择_完成": {
+        "$__mpe_code": {
+            "position": {
+                "x": 356,
+                "y": -140
+            }
+        },
+        "focus": {
+            "Node.Action.Succeeded": "陪伴人物选择清空完成"
+        },
+        "next": [
+            "[JumpBack]陪伴_沈星回",
+            "[JumpBack]陪伴_黎深",
+            "[JumpBack]陪伴_祁煜",
+            "[JumpBack]陪伴_秦彻",
+            "[JumpBack]陪伴_夏以昼"
+        ],
+        "rate_limit": 500,
+        "timeout": 8000
+    },
+    "陪伴_祁煜": {
+        "$__mpe_code": {
+            "position": {
+                "x": -534,
+                "y": 964
+            }
+        },
+        "next": [
+            "选择祁煜"
+        ],
+        "rate_limit": 500,
+        "timeout": 8000
+    },
+    "陪伴_秦彻": {
+        "$__mpe_code": {
+            "position": {
+                "x": -539,
+                "y": 1225
+            }
+        },
+        "next": [
+            "选择秦彻"
+        ],
+        "rate_limit": 500,
+        "timeout": 8000
+    },
     "陪伴_进入人物选择": {
         "$__mpe_code": {
             "position": {
-                "x": 164,
-                "y": 743
+                "x": -1592,
+                "y": 166
             }
         },
         "action": {
@@ -543,21 +879,25 @@
                 "target": [
                     39,
                     139,
-                    40,
-                    31
+                    31,
+                    30
                 ]
             },
             "type": "Click"
         },
         "focus": {
-            "Node.Action.Succeeded": "进入「陪我一起」界面"
+            "Node.Action.Succeeded": "进入人物选择页面"
         },
         "next": [
-            "选择沈星回",
-            "选择黎深",
-            "选择祁煜",
-            "选择秦彻",
-            "选择夏以昼"
+            "[JumpBack]取消沈星回已选",
+            "[JumpBack]取消黎深已选",
+            "[JumpBack]取消祁煜已选",
+            "[JumpBack]取消秦彻已选",
+            "[JumpBack]取消夏以昼已选",
+            "[JumpBack]陪伴_清空选择_完成"
+        ],
+        "on_error": [
+            "stop"
         ],
         "post_delay": 400,
         "recognition": {
@@ -581,8 +921,8 @@
     "陪伴_进入陪我一起": {
         "$__mpe_code": {
             "position": {
-                "x": 1340,
-                "y": 675
+                "x": 1487,
+                "y": 699
             }
         },
         "action": {
@@ -611,5 +951,18 @@
             },
             "type": "OCR"
         }
+    },
+    "陪伴_黎深": {
+        "$__mpe_code": {
+            "position": {
+                "x": -517,
+                "y": 682
+            }
+        },
+        "next": [
+            "选择黎深"
+        ],
+        "rate_limit": 500,
+        "timeout": 8000
     }
 }
