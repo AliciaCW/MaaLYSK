@@ -4,12 +4,12 @@
             "filePath": "D:\\Files\\Projects\\GitHub\\MaaLYSK\\assets\\resource\\pipeline\\feature\\staywithme.json",
             "filename": "新建Pipeline2",
             "isModifiedExternally": false,
-            "lastSyncTime": 1773338507162,
+            "lastSyncTime": 1773340197389,
             "prefix": "",
             "savedViewport": {
-                "x": 553,
-                "y": 90,
-                "zoom": 0.35
+                "x": 168,
+                "y": 56,
+                "zoom": 0.43
             },
             "version": "v1.2.3"
         }
@@ -35,30 +35,6 @@
             "position": {
                 "x": -2469,
                 "y": 488
-            }
-        }
-    },
-    "$__mpe_external_退出各类弹窗_新建Pipeline2": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2807,
-                "y": 400
-            }
-        }
-    },
-    "$__mpe_external_退出牵绊度提升popop_新建Pipeline2": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3446,
-                "y": 296
-            }
-        }
-    },
-    "$__mpe_external_退出获得奖励popop_新建Pipeline2": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2938,
-                "y": 361
             }
         }
     },
@@ -411,8 +387,8 @@
     "等待运动结束": {
         "$__mpe_code": {
             "position": {
-                "x": 3396,
-                "y": 655
+                "x": 3392,
+                "y": 648
             }
         },
         "action": {
@@ -423,36 +399,28 @@
             "Node.Action.Succeeded": "与沈星回的 5 分钟运动结束，返回角色选择页面"
         },
         "next": [
-            "[JumpBack]退出获得奖励popop",
-            "[JumpBack]退出各类弹窗",
-            "[JumpBack]退出牵绊度提升popop"
+            "陪伴_进入人物选择"
         ],
         "post_delay": 2000,
         "recognition": {
             "param": {
-                "expected": [
-                    "点击空白区域关闭",
-                    "点击空白区域继续",
-                    "点击空白处关闭",
-                    "点击空白区域",
-                    "点击空白处"
-                ],
                 "roi": [
-                    0,
-                    0,
-                    0,
-                    0
+                    19,
+                    936,
+                    12,
+                    13
                 ]
             },
-            "type": "OCR"
+            "type": "DirectHit"
         },
+        "repeat": 3,
         "timeout": 360000
     },
     "跳过对话": {
         "$__mpe_code": {
             "position": {
-                "x": 1763,
-                "y": 660
+                "x": 1749,
+                "y": 671
             }
         },
         "action": {
@@ -530,6 +498,17 @@
             "等待运动结束"
         ],
         "post_delay": 400,
+        "recognition": {
+            "param": {
+                "roi": [
+                    19,
+                    936,
+                    12,
+                    13
+                ]
+            },
+            "type": "DirectHit"
+        },
         "repeat": 5,
         "timeout": 8000
     },
